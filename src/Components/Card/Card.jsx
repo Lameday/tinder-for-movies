@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import PropTypes from 'prop-types';
+import PropTypes from 'prop-types'
 import {
   MotionCard, CardImage, Header, Text, GradientOverlay,
 } from './CardStyles';
@@ -49,16 +49,12 @@ export default function Card({
       exit={{ opacity: 0 }}
       data-testid={`card-${id}`}
     >
-      <Header>
-        {title}
-        {' '}
-        - (
-        {rating}
-        /10)
+      <Header data-testid={`card-${id}-title`}>
+        {title} - {rating}/10
       </Header>
       <GradientOverlay />
-      <CardImage src={imageURL} alt="bg-pic" />
-      <Text>{summary}</Text>
+      <CardImage src={imageURL} alt="bg-pic" data-testid={`card-${id}-image`}/>
+      <Text data-testid={`card-${id}-text`}>{summary}</Text>
     </MotionCard>
   );
 }
