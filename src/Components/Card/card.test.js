@@ -33,3 +33,4 @@ test('Card image must have src and alt "bg-pic"', () => {
   expect(cardText).toHaveAttribute('src', 'https://images-na.ssl-images-amazon.com/images/M/MV5BMTUzNTE2NTkzMV5BMl5BanBnXkFtZTgwMDAzOTUyMDI@._V1_SY1000_CR0,0,674,1000_AL_.jpg')
   expect(cardText).toHaveAttribute('alt', 'bg-pic')
 })
+

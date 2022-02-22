@@ -8,7 +8,7 @@ export default function Stack({
   moviesList, deleteFirstMovie, newMovieList, setSwipeDirection, swipeDirection,
 }) {
   return (
-    <Frame>
+    <Frame data-testid="frame">
       <AnimatePresence>
         {moviesList.map((movie, index) => {
           const isTop = index === moviesList.length - 1;
