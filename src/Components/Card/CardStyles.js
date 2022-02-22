@@ -8,6 +8,7 @@ const MotionCard = styled(motion.div)`
   width: 450px;
   border-radius: 12px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  background-color:black;
   @media (max-width: 480px) {
     width: 100%;
     min-width: 100px;
@@ -15,9 +16,10 @@ const MotionCard = styled(motion.div)`
 `;
 
 const CardImage = styled.img`
-  object-fit: auto;
+  width:100%;
   @media (max-width: 480px) {
     height: 110%;
+    width:auto;
   }
 `;
 const Header = styled.div`
@@ -30,7 +32,7 @@ const Header = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1.5rem;
+  font-size: 1rem;
   overflow: hidden;
 `;
 const Text = styled.div`

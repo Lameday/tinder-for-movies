@@ -6,7 +6,7 @@ import HeaderWrapper from './HeaderStyles';
 
 export default function Header() {
   return (
-    <HeaderWrapper>
+    <HeaderWrapper data-testid="header">
       <p>MOVIE-TINDER</p>
       <FontAwesomeIcon icon={faClapperboard} />
     </HeaderWrapper>

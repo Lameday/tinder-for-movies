@@ -44,7 +44,11 @@ Stack.propTypes = {
     summary: PropTypes.string.isRequired,
     rating: PropTypes.number.isRequired,
     id: PropTypes.string.isRequired,
-  })).isRequired,
+  })),
   setSwipeDirection: PropTypes.func.isRequired,
-  swipeDirection: PropTypes.string.isRequired,
+  swipeDirection: PropTypes.string,
+};
+Stack.defaultProps = {
+  newMovieList: null,
+  swipeDirection: null,
 };

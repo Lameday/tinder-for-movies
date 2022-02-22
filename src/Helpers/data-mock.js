@@ -35,7 +35,7 @@ const moviesListArray = new Promise((resolve) => resolve([
   {
     id: 'ID5',
     imageURL: 'https://m.media-amazon.com/images/M/MV5BMTMxNTMwODM0NF5BMl5BanBnXkFtZTcwODAyMTk2Mw@@._V1_.jpg',
-    title: 'Grozny rycerz',
+    title: 'Mroczny Rycerz',
     summary: 'Lorem ipsum….',
     rating: 9.0,
   },

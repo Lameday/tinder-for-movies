@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import PropTypes from 'prop-types'
+import PropTypes from 'prop-types';
 import {
   MotionCard, CardImage, Header, Text, GradientOverlay,
 } from './CardStyles';
@@ -38,10 +38,10 @@ export default function Card({
       key={id}
       drag
       dragConstraints={{
-        top: 10,
-        left: 10,
-        right: 10,
-        bottom: 10,
+        top: 0,
+        left: 0,
+        right: 0,
+        bottom: 0,
       }}
       onDragEnd={(event, info) => handleDrag(info.offset.x)}
       animate={{ x: swipeDistance, opacity: 1 }}
@@ -50,10 +50,15 @@ export default function Card({
       data-testid={`card-${id}`}
     >
       <Header data-testid={`card-${id}-title`}>
-        {title} - {rating}/10
+        {title}
+        {' '}
+        -
+        {' '}
+        {rating}
+        /10
       </Header>
       <GradientOverlay />
-      <CardImage src={imageURL} alt="bg-pic" data-testid={`card-${id}-image`}/>
+      <CardImage src={imageURL} alt="bg-pic" data-testid={`card-${id}-image`} />
       <Text data-testid={`card-${id}-text`}>{summary}</Text>
     </MotionCard>
   );
@@ -74,8 +79,13 @@ Card.propTypes = {
     summary: PropTypes.string.isRequired,
     rating: PropTypes.number.isRequired,
     id: PropTypes.string.isRequired,
-  })).isRequired,
+  })),
   isTop: PropTypes.bool.isRequired,
   setSwipeDirection: PropTypes.func.isRequired,
-  swipeDirection: PropTypes.string.isRequired,
+  swipeDirection: PropTypes.string,
+};
+
+Card.defaultProps = {
+  newMovieList: null,
+  swipeDirection: null,
 };
