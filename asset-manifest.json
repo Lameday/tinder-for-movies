@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/tinder-for-movies/static/css/main.f2bfeec0.css",
+    "main.js": "/tinder-for-movies/static/js/main.6223ed31.js",
+    "static/js/787.eb8d15da.chunk.js": "/tinder-for-movies/static/js/787.eb8d15da.chunk.js",
+    "index.html": "/tinder-for-movies/index.html",
+    "main.f2bfeec0.css.map": "/tinder-for-movies/static/css/main.f2bfeec0.css.map",
+    "main.6223ed31.js.map": "/tinder-for-movies/static/js/main.6223ed31.js.map",
+    "787.eb8d15da.chunk.js.map": "/tinder-for-movies/static/js/787.eb8d15da.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f2bfeec0.css",
+    "static/js/main.6223ed31.js"
+  ]
+}
